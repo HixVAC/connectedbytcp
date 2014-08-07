@@ -164,7 +164,7 @@ TCPConnected.prototype.SetRoomLevelByName = function (name, level, cb){
 	rid = this.GetRIDByName(name);
 	
 	var RoomLevelCommand = util.format(RoomSendLevelCommand,rid,level);
-	var payload = util.format(RequestString,'RoomSendCommand',encodeURIComponent(RoomLevelCommand));
+	var payload = util.format(RequestString,'RoomSendLevelCommand',encodeURIComponent(RoomLevelCommand));
 	
 	var opts = {
 	method:"POST",
